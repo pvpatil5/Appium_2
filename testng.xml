@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test name="Test1">
+  <parameter name="deviceName" value="Redmi"></parameter>
+  <parameter name="platformVersion" value="7"></parameter>
+  <parameter name="UDID" value="123456789"></parameter>
+  <parameter name="port" value="4723"></parameter>
+  <classes>
+  <class name="parallel.Voonik_"></class>
+  </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test2">
+  <parameter name="deviceName" value="samsung"></parameter>
+  <parameter name="platformVersion" value="8"></parameter>
+  <parameter name="UDID" value="7894561230"></parameter>
+  <parameter name="port" value="4724"></parameter>
+  <classes>
+  <class name="parallel.Voonik_"></class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

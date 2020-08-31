@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="45597" started-at="2020-08-31T05:43:51Z" finished-at="2020-08-31T05:44:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="45597" started-at="2020-08-31T05:43:51Z" finished-at="2020-08-31T05:44:36Z">
+      <class name="com.appium.pac.webapps.Chrome_">
+        <test-method status="PASS" signature="launchchrome()[pri:0, instance:com.appium.pac.webapps.Chrome_@ed9d034]" name="launchchrome" duration-ms="38785" started-at="2020-08-31T11:13:51Z" finished-at="2020-08-31T11:14:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchchrome -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.appium.pac.webapps.Chrome_@ed9d034]" name="afterTest" is-config="true" duration-ms="6704" started-at="2020-08-31T11:14:29Z" finished-at="2020-08-31T11:14:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.appium.pac.webapps.Chrome_ -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
