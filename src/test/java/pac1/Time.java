@@ -1,24 +1,21 @@
-package com.appium.pac.gestures;
+package pac1;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.ScreenOrientation;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class Orientation_2 {
-
-
-
-
+public class Time 
+{
+	DesiredCapabilities cap = new DesiredCapabilities();
 	@Test
-	public void test1() throws Throwable
+	public void dropdown() throws Throwable 
 	{
-		DesiredCapabilities cap = new DesiredCapabilities();
+		//cap= new DesiredCapabilities();
 		cap.setCapability("deviceName", "Redmi");
 		cap.setCapability("automationName", "Appium");
 		cap.setCapability("platformName", "Android");
@@ -31,17 +28,23 @@ public class Orientation_2 {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		System.out.println("The initial screen orientation is ----->"+driver.getOrientation());
-		Thread.sleep(2000);
-		driver.rotate(ScreenOrientation.LANDSCAPE);
+		WebElement element=driver.findElementByAccessibilityId("Views");
 
-		Thread.sleep(2000);
-		System.out.println("The orientation of screen after rotation is ---->"+driver.getOrientation());
-		Thread.sleep(3000);
-		driver.rotate(ScreenOrientation.PORTRAIT);
+		driver.tap(1, element, 500);
 
+		WebElement DateWidgets=driver.findElementByAccessibilityId("Date Widgets");
+
+		driver.tap(1, DateWidgets, 500);
+
+		driver.findElementByXPath("//android.widget.TextView[@text='2. Inline']").click();
 		Thread.sleep(2000);
-		System.out.println("The orientation of screen after rotation is ---->"+driver.getOrientation());
+		driver.findElementByXPath("//*[@content-desc='2']").click();
+		
+		
+
+
+
+
+
 	}
-
 }

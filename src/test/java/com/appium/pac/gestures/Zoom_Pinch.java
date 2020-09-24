@@ -36,7 +36,8 @@ public class Zoom_Pinch
 		WebElement image = dr.findElementById("com.davemorrissey.labs.subscaleview.sample:id/imageView");
 
 		/*Inbuilt method*/
-		//dr.zoom(image);
+//		dr.zoom(image);
+//		dr.pinch(image);
 
 
 		Thread.sleep(5000);
@@ -48,7 +49,7 @@ public class Zoom_Pinch
 		//dr.pinch(image);
 		int x1 = dr.manage().window().getSize().getWidth()/2;
 		int y1 = dr.manage().window().getSize().getHeight()/2;
-		dr.pinch(x, y);
+		dr.pinch(x1, y1);
 	}
 	@AfterTest
 	public void afterTest() throws InterruptedException{

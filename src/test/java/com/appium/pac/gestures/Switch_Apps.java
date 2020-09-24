@@ -1,6 +1,7 @@
 package com.appium.pac.gestures;
 
 import java.net.URL;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -41,10 +42,12 @@ public class Switch_Apps
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.findElementByXPath( "//android.widget.EditText[@content-desc=\"search_default_search_text_input\"]" ).sendKeys("watches");
 		driver.pressKeyCode(AndroidKeyCode.KEYCODE_ENTER);
+		//	driver.runAppInBackground(6);
+
 
 		//launching calculator
 		driver.startActivity(calculatorAppPackageName, calculatorAppActivityName);
-		
+
 		//driver.findElementById("android:id/button2").click();
 
 		driver.findElementById("com.miui.calculator:id/btn_4_s").click();
@@ -53,8 +56,19 @@ public class Switch_Apps
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		// Re launch calculator App
-		driver.launchApp();
+		Set<String>	openapps=driver.getContextHandles();
+		Thread.sleep(7000);
+		for(String applicaton:openapps) 
+		{
+			System.out.println(applicaton);
+		}
+		driver.context("NATIVE_APP");
+		
+
+
+
+		// Re launch myntra App
+		//	driver.launchApp();
 
 
 

@@ -3,12 +3,11 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.appium.pac.webapps.Chrome_">
+      <class name="com.appium.pac.gestures.Switch_Apps">
         <methods>
-          <include name="launchchrome"/>
-          <include name="afterTest"/>
+          <include name="apps"/>
         </methods>
-      </class> <!-- com.appium.pac.webapps.Chrome_ -->
+      </class> <!-- com.appium.pac.gestures.Switch_Apps -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

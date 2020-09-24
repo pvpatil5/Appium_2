@@ -30,7 +30,7 @@ public class UnInstall_Apps
 
 		Thread.sleep(2000);
 
-		//driver.removeApp("com.mobeta.android.demodslv");
+		driver.removeApp("com.mobeta.android.demodslv");
 
 		System.out.println("Returns false if app is not available="+driver.isAppInstalled("com.mobeta.android.demodslv"));
 
